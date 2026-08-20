@@ -29,7 +29,8 @@ body {
   justify-content: center;
   flex: 1;
 }
-main{
+
+main {
   margin: auto 0;
   width: 100%;
 }
@@ -97,8 +98,17 @@ header {
   z-index: 3;
 }
 
+.section {
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .eyebrow,
-.section-tag,
 .chapter {
   font-size: 1rem;
   font-weight: 700;
@@ -106,7 +116,17 @@ header {
   color: var(--cyan);
   margin-top: 10px;
   text-align: center;
-  
+}
+
+.section-tag {
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: inset 0 0 10px var(--ink);
+  padding: 3px;
 }
 
 .hero h1 {
@@ -158,37 +178,21 @@ header {
   bottom: -100px
 }
 
-.section {
-  width: 95%;;
-  margin: 0 auto;
-  min-height: 100vh;
-}
 
-.section-title {
-  font: 700 clamp(2.4rem, 5vw, 4.4rem)/1 'Playfair Display', serif;
-  margin: 15px 0 45px
-}
 
-.intro {
-  color: var(--muted);
-  max-width: 720px
-}
 
 .cover-card {
-  margin-top: 10px;
   display: grid;
   grid-template-columns: 1.2fr .8fr;
   gap: 0;
   background: var(--white);
-  border: 1px solid var(--line);
-  box-shadow: 0 25px 70px #1b183015
+  width: 100%;
 }
 
 .cover-title {
-  padding: 65px;
   background: linear-gradient(135deg, #171d35, #3d267d);
-  color: #fff;
-  min-height: 480px
+  color: var(--white);
+  padding-left: 15PX;
 }
 
 .cover-title p {
@@ -199,7 +203,7 @@ header {
 
 .cover-title h2 {
   font: 700 clamp(2.7rem, 5vw, 5rem)/1.02 'Playfair Display', serif;
-  margin: 30px 0
+  margin: 30px 0;
 }
 
 .cover-title strong {
@@ -207,7 +211,7 @@ header {
 }
 
 .cover-description {
-  max-width: 480px;
+  max-width: 460px;
   color: #e6e6ef !important;
   font-weight: 400 !important;
   letter-spacing: 0 !important
@@ -236,11 +240,16 @@ header {
 .student-data strong {
   letter-spacing: 1px
 }
-
+.section-title{
+  width: 95%;
+  margin: 15px auto;
+}
 .index-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-top: 1px solid var(--line)
+  border-top: 1px solid var(--line);
+  width: 95%;
+  margin: auto;
 }
 
 .index-item {
@@ -250,11 +259,13 @@ header {
   grid-template-columns: 65px 1fr 30px;
   gap: 15px;
   align-items: center;
-  transition: .25s
+  transition: .25s;
+  margin: 0 5px;
+  font-size: 1.3rem;
 }
 
 .index-item:hover {
-  background: #fff;
+  background: var(--white);
   transform: translateX(8px)
 }
 
@@ -264,22 +275,26 @@ header {
 }
 
 .dark-section {
-  max-width: none;
   background: var(--ink);
-  color: #f8f8fb;
-  padding-left: max(28px, calc((100vw - 1124px)/2));
-  padding-right: max(28px, calc((100vw - 1124px)/2))
+  color: var(--white);
 }
 
 .article {
-  border-bottom: 1px solid #ffffff1c;
   scroll-margin-top: 20px;
   position: relative;
   min-height: 100vh;
-  
+  width: 95%;
+  padding-left: 15px;
+  border-top: 1px solid var(--line);
+}
+.encabezado{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
 }
 
-.article .back{
+.article .back {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -292,8 +307,9 @@ header {
 }
 
 .article p {
-  max-width: 850px;
-  color: #cdd0dc
+  width: 100%;
+  color: #cdd0dc;
+  text-align: justify;
 }
 
 .quote {
@@ -315,10 +331,15 @@ header {
 
 
 
-.fact-card{
+.fact-card {
   background: linear-gradient(145deg, #302061, #182e4a);
   padding-left: 20px;
-  border: 1px solid #ffffff18;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0;
 }
 
 .fact-card span {
@@ -328,8 +349,13 @@ header {
 }
 
 .fact-card ul {
-  padding-left: 20px;
-  color: #e1e2eb
+  color: #e1e2eb;
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    min-width: 300px;
+    margin: 5px 10px;
+  }
 }
 
 .thinkers {
@@ -382,12 +408,13 @@ header {
   font-size: .9rem;
   color: #cdd0dc
 }
-.science-card{
+
+.science-card {
   display: flex;
   flex-direction: column;
   background: linear-gradient(145deg, #302061, #182e4a);
   padding-left: 20px;
-  
+
 }
 
 .science-card .atom {
@@ -432,15 +459,25 @@ header {
   color: var(--cyan)
 }
 
+.intro {
+  color: var(--muted);
+  width: 95%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  
+}
+
 .sources {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 35px
+  gap: 0;
+  width: 100%;
+  background: var(--line);
+  padding: 10px 0;
 }
 
 .sources a {
-  padding: 25px;
+  padding: 15px;
   background: var(--paper);
   border: 1px solid var(--line);
   transition: .2s
@@ -469,17 +506,15 @@ header {
 }
 
 .books {
-  margin-top: 45px;
-  background: #eee9dc;
-  padding: 30px
+  margin: 10px 0;
+  background: var(--line);
+  width: 95%;
 }
 
 .books h3 {
-  font: 700 1.8rem 'Playfair Display', serif
-}
-
-.books li {
-  margin: 8px 0
+  font: 700 1.8rem 'Playfair Display', serif;
+  width: 95%;
+  margin: 5px auto;
 }
 
 footer {
