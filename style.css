@@ -560,7 +560,7 @@ footer a {
   }
 
   .hero-content {
-    margin-top: 80px
+    margin-top: 20px
   }
 
   .cover-card,
@@ -572,9 +572,7 @@ footer a {
     min-height: auto
   }
 
-  .student-data {
-    padding: 40px
-  }
+  
 
   .thinkers,
   .impact-grid {
@@ -595,18 +593,7 @@ footer a {
 }
 
 @media(max-width:520px) {
-  .section {
-    padding: 70px 20px
-  }
-
-  .dark-section {
-    padding-left: 20px;
-    padding-right: 20px
-  }
-
-  .hero-content {
-    padding: 0 20px
-  }
+ 
 
   .thinkers,
   .impact-grid {
@@ -617,14 +604,9 @@ footer a {
     letter-spacing: -2px
   }
 
-  .cover-title {
-    padding: 40px 25px
-  }
+ 
 
-  footer {
-    flex-direction: column;
-    gap: 15px
-  }
+ 
 }
 
 .reveal {
