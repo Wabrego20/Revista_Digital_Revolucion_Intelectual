@@ -242,7 +242,8 @@ header {
 }
 .section-title{
   width: 95%;
-  margin: 15px auto;
+  margin: auto;
+  font-size: 2rem;
 }
 .index-grid {
   display: grid;
@@ -253,15 +254,17 @@ header {
 }
 
 .index-item {
-  padding: 25px 10px;
+  padding: 20px 10px;
   border-bottom: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: 65px 1fr 30px;
-  gap: 15px;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   transition: .25s;
   margin: 0 5px;
   font-size: 1.3rem;
+  span{
+    margin: 0 20px;
+  }
 }
 
 .index-item:hover {
@@ -271,7 +274,7 @@ header {
 
 .index-item b {
   color: var(--violet);
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 .dark-section {
@@ -303,7 +306,7 @@ header {
 .article h2 {
   font: 700 clamp(2.4rem, 5vw, 4.4rem)/1.05 'Playfair Display', serif;
   margin: 14px 0 25px;
-  max-width: 850px
+  width: 95%;
 }
 
 .article p {
