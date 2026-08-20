@@ -17,11 +17,21 @@
 }
 
 body {
-  margin: 0;
   background: var(--paper);
   color: var(--ink);
   font-family: 'DM Sans', sans-serif;
-  line-height: 1.7
+  line-height: 1.7;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+main{
+  margin: auto 0;
+  width: 100%;
 }
 
 a {
@@ -29,25 +39,27 @@ a {
   text-decoration: none
 }
 
-.hero {
-  min-height: 92vh;
+header {
   position: relative;
   overflow: hidden;
   background: var(--ink);
   color: white;
-  padding-bottom: 80px
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .navbar {
-  height: 80px;
-  max-width: 1180px;
-  margin: auto;
-  padding: 0 28px;
+  width: 95%;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 5
+  z-index: 5;
 }
 
 .logo {
@@ -79,11 +91,10 @@ a {
 }
 
 .hero-content {
-  max-width: 1180px;
-  margin: 120px auto 0;
-  padding: 0 28px;
+  width: 95%;
+  margin: 10px auto;
   position: relative;
-  z-index: 3
+  z-index: 3;
 }
 
 .eyebrow,
