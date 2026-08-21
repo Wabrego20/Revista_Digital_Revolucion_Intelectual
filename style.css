@@ -1255,8 +1255,8 @@ footer a {
 .qr-logo {
   position: absolute;
 
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 
   background: #00B581;
 
@@ -1279,6 +1279,9 @@ footer a {
     0 2px 8px rgba(0, 0, 0, 0.2);
 
   z-index: 2;
+  img{
+    width: 100%;
+  }
 }
 
 
