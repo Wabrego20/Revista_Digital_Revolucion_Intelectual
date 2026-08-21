@@ -1187,7 +1187,7 @@ footer a {
 /* Contenedor del QR */
 .codigosqr{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 95%;
   flex-wrap: wrap;
   align-items: center;
@@ -1215,9 +1215,10 @@ footer a {
 
 .qr-logo {
   position: absolute;
-  width: 35px;
-  height: 35px;
-  border: 3px solid #00B581;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #00B581;
+  background-color: var(--white);
   border-radius: 8px;
   display: flex;
   justify-content: center;
