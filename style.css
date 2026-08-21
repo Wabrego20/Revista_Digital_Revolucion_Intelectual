@@ -228,6 +228,7 @@ header {
   color: var(--orange)
 }
 
+
 .cover-description {
   max-width: 460px;
   color: #e6e6ef !important;
@@ -235,29 +236,46 @@ header {
   letter-spacing: 0 !important
 }
 
-.student-data {
-  padding: 55px 45px;
+.student{
+  min-height: 100vh;
+  margin: auto;
+  width: 95%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  gap: 27px
 }
 
-.student-data div {
-  display: flex;
-  flex-direction: column
+.student div{
+  width: 95%;
+  text-align: center;
+  margin: 10px auto;
+  width: 100%;
 }
-
-.student-data span {
-  font-size: .7rem;
+.student div span{
   color: var(--muted);
-  font-weight: 700;
-  letter-spacing: 1.5px
+  letter-spacing: 1px;
 }
 
-.student-data strong {
-  letter-spacing: 1px
+.student div strong{
+  letter-spacing: 2px;
+}
+
+.materia{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 10px auto;
+  flex-wrap: wrap;
+
+}
+.materia img{
+  width: 90px;
+  border-radius: 50%;
+}
+.materia p{
+  font-weight: bold;
 }
 
 .section-title {
