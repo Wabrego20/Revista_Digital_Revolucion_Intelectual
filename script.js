@@ -107,3 +107,6 @@ cambiarIdea();
 /* Cambiar cada 4 segundos */
 
 setInterval(cambiarIdea, 4000);
+
+
+

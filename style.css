@@ -1182,113 +1182,47 @@ footer a {
 
 
 
-/* Tarjeta */
-
-.qr-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
-  
-  backdrop-filter: blur(10px);
-}
-
-
-/* Título */
-
-.qr-title {
-  width: 100%;
-  margin: 5px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  color: #173b35;
-}
 
 
 /* Contenedor del QR */
-.qr-iframe {
-  height: 95%;
-  width: 100%;
-  border: none;
-  display: block;
-  overflow: hidden;
-  scrollbar-width: none;
-}
-
-/* Chrome, Edge, Safari */
-.qr-iframe::-webkit-scrollbar {
-  display: none;
+.codigosqr{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .qr-container {
-  margin: auto;
-  background: white;
+  margin: 10px;
   border-radius: 14px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-direction: column;
 }
 
-/* QR */
-
-#qrcode {
-  width: 100%;
-  height: 100%;
-}
-
-
-#qrcode img {
+.qrcode{
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
 }
 
-
 /* Logo / diseño del centro */
 
 .qr-logo {
   position: absolute;
-
   width: 35px;
   height: 35px;
-
-  background: #00B581;
-
-  border: 3px solid white;
-
+  border: 3px solid #00B581;
   border-radius: 8px;
-
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   font-size: 12px;
-
-  font-weight: bold;
-
-  color: white;
-
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.2);
-
-  z-index: 2;
-  img{
-    width: 100%;
-  }
 }
 
 
-/* Texto inferior */
-
-.qr-text {
-  margin: 5px;
-  font-size: 12px;
-  color: #666;
-}
