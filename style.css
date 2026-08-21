@@ -13,7 +13,9 @@
 
 * {
   box-sizing: border-box;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -21,16 +23,15 @@ body {
   color: var(--ink);
   font-family: 'DM Sans', sans-serif;
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1;
+  overflow-x: hidden;
 }
 
 main {
-  margin: auto 0;
   width: 100%;
 }
 
@@ -60,17 +61,20 @@ header {
   position: relative;
   z-index: 5;
 }
-.navbar .logo{
+
+.navbar .logo {
   height: 100%;
   line-height: 100%;
   text-align: center;
 }
+
 .navbar .logo span {
   color: var(--cyan);
   font-size: 2rem;
   line-height: 2rem;
   margin-left: 10px;
 }
+
 .menu-btn {
   display: none;
   background: none;
@@ -84,9 +88,10 @@ header {
   font-size: .9rem;
 }
 
-.nav-links a{
+.nav-links a {
   margin: 10px;
 }
+
 .nav-links a:hover {
   color: var(--cyan)
 }
@@ -518,6 +523,16 @@ header {
   width: 95%;
 }
 
+.books ul {
+  width: 95%;
+  margin: auto;
+}
+
+.books ul li {
+  margin: 10px;
+}
+
+
 .books h3 {
   font: 700 1.8rem 'Playfair Display', serif;
   width: 95%;
@@ -527,16 +542,22 @@ header {
 footer {
   background: var(--ink);
   color: var(--line);
-  padding: 30px;
   display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  height: auto;
 }
 
 footer p {
-  margin: 0;
+  margin: 10px 0;
   font-size: .75rem;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  width: 95%;
+  margin-left: 20px;
 }
 
 footer a {
@@ -548,10 +569,10 @@ footer a {
     display: none;
     position: absolute;
     top: 20px;
-    left: 20px;
-    right: 20px;
     background: var(--ink);
-    flex-direction: column
+    flex-direction: column;
+    width: 99%;
+    margin: 0 auto;
   }
 
   .nav-links.open {
@@ -1157,4 +1178,114 @@ footer a {
 
   }
 
+}
+
+
+
+/* Tarjeta */
+
+.qr-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  
+  backdrop-filter: blur(10px);
+}
+
+
+/* Título */
+
+.qr-title {
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #173b35;
+}
+
+
+/* Contenedor del QR */
+.qr-iframe {
+  height: 95%;
+  width: 100%;
+  border: none;
+  display: block;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+/* Chrome, Edge, Safari */
+.qr-iframe::-webkit-scrollbar {
+  display: none;
+}
+
+.qr-container {
+  margin: auto;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* QR */
+
+#qrcode {
+  width: 100%;
+  height: 100%;
+}
+
+
+#qrcode img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* Logo / diseño del centro */
+
+.qr-logo {
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+  background: #00B581;
+
+  border: 3px solid white;
+
+  border-radius: 8px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  color: white;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.2);
+
+  z-index: 2;
+}
+
+
+/* Texto inferior */
+
+.qr-text {
+  margin: 5px;
+  font-size: 12px;
+  color: #666;
 }
