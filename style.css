@@ -94,10 +94,11 @@ header {
 .nav-links {
   display: flex;
   font-size: .9rem;
+  margin: 10px 0;
 }
 
 .nav-links a {
-  margin: 10px;
+  margin: auto 10px;
 }
 
 .nav-links a:hover {
@@ -1238,6 +1239,27 @@ footer a {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/*Matemáticas*/
+.mat{
+  border-radius: 7px;
+  padding: 5px 7px;
+  background-color: var(--cyan);
+  color: var(--ink);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.mat:hover{
+  scale: 0.95;
+  background-color: transparent;
 }
 
 
