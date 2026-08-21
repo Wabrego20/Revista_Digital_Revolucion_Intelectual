@@ -661,6 +661,13 @@ footer a {
 
 }
 
+@media (max-width: 480px) {
+    /* Diseño para celulares */
+    .materia img{
+      width: 60px;
+    }
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
