@@ -471,7 +471,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
-  margin-top: 40px
+  margin: 40px 0;
 }
 
 .impact-grid div {
@@ -500,7 +500,8 @@ header {
   margin-top: 40px;
   font-weight: 800;
   letter-spacing: 4px;
-  color: var(--cyan)
+  color: var(--cyan);
+  margin: 20px 0;
 }
 
 .intro {
@@ -687,7 +688,7 @@ footer a {
 
 .intel-container {
 
-  width: 100%;
+  width: 95%;
   max-width: 900px;
 
   margin: 40px auto;
