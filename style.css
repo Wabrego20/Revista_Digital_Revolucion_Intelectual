@@ -236,7 +236,7 @@ header {
   letter-spacing: 0 !important
 }
 
-.student{
+.student {
   min-height: 100vh;
   margin: auto;
   width: 95%;
@@ -246,22 +246,23 @@ header {
   justify-content: center;
 }
 
-.student div{
+.student div {
   width: 95%;
   text-align: center;
   margin: 10px auto;
   width: 100%;
 }
-.student div span{
+
+.student div span {
   color: var(--muted);
   letter-spacing: 1px;
 }
 
-.student div strong{
+.student div strong {
   letter-spacing: 2px;
 }
 
-.materia{
+.materia {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -270,17 +271,19 @@ header {
   flex-wrap: wrap;
 
 }
-.materia img{
+
+.materia img {
   width: 90px;
   border-radius: 50%;
 }
-.materia p{
+
+.materia p {
   font-weight: bold;
 }
 
 .section-title {
   width: 95%;
-  margin: 10px auto;
+  margin: 10px 0;
   font-size: 1.4rem;
 }
 
@@ -289,7 +292,6 @@ header {
   grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid var(--line);
   width: 95%;
-  margin: 20px auto;
 }
 
 .index-item {
@@ -406,7 +408,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 18px;
-  margin-top: 20px
+  margin: 20px 0;
 }
 
 .thinker {
@@ -513,25 +515,25 @@ header {
 
 }
 
+
 .sources {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
-  width: 100%;
-  background: var(--line);
+  width: 95%;
   padding: 10px 0;
 }
 
 .sources a {
-  padding: 15px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  transition: .2s
+  padding: 15px 2px;
+  border-top: 1px solid var(--line);
+  transition: .2s;
 }
 
 .sources a:hover {
   border-color: var(--violet);
-  transform: translateY(-3px)
+  transform: translateY(-3px);
+  background-color: var(--white);
 }
 
 .sources span {
@@ -552,9 +554,9 @@ header {
 }
 
 .books {
-  margin: 10px 0;
   background: var(--line);
   width: 95%;
+  margin-bottom: 10px;
 }
 
 .books ul {
@@ -663,10 +665,11 @@ footer a {
 }
 
 @media (max-width: 480px) {
-    /* Diseño para celulares */
-    .materia img{
-      width: 60px;
-    }
+
+  /* Diseño para celulares */
+  .materia img {
+    width: 60px;
+  }
 }
 
 .reveal {
@@ -687,18 +690,13 @@ footer a {
    ========================================= */
 
 .intel-container {
-
   width: 95%;
   max-width: 900px;
-
-  margin: 40px auto;
-
+  margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
-
   align-items: center;
   justify-content: center;
-
 }
 
 
@@ -710,42 +708,28 @@ footer a {
 
   width: 380px;
   height: 380px;
-
   min-width: 280px;
   min-height: 280px;
-
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex: 1 1 380px;
-
 }
-
 
 /* =========================================
    CÍRCULO CENTRAL
    ========================================= */
-
 .intel-core {
-
   width: 125px;
   height: 125px;
-
   position: relative;
-
   z-index: 20;
-
   border-radius: 50%;
-
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
-
   background:
     radial-gradient(circle at 35% 30%,
       #ffffff 0%,
@@ -754,74 +738,45 @@ footer a {
       #121629 100%);
 
   border: 2px solid #4ad8d1;
-
   box-shadow:
     0 0 15px #4ad8d1,
     0 0 45px #6846c7,
     0 0 80px #6846c780;
-
   animation: corePulse 2.5s infinite ease-in-out;
-
 }
-
 
 /* símbolo */
-
 .core-symbol {
-
   font-size: 34px;
-
   color: #ff8a4c;
-
   line-height: 1;
-
   animation: symbolRotate 5s linear infinite;
-
 }
-
 
 /* texto IDEAS */
-
 .intel-core span {
-
   color: #ffffff;
-
   font-size: 11px;
-
   font-weight: bold;
-
   letter-spacing: 3px;
-
   margin-top: 7px;
-
 }
-
 
 /* =========================================
    ÓRBITAS
    ========================================= */
-
 .idea-orbit {
-
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   width: 100%;
   height: 100%;
-
   transform: translate(-50%, -50%);
-
   border: 1px solid rgba(74, 216, 209, .18);
-
   border-radius: 50%;
-
 }
 
-
 /* tamaños */
-
 .orbit-1 {
   width: 100%;
   height: 100%;
@@ -852,162 +807,98 @@ footer a {
   animation: orbit5 12s linear infinite;
 }
 
-
 /* =========================================
    PALABRAS
    ========================================= */
-
 .idea {
-
   position: absolute;
-
   top: 0;
   left: 50%;
-
   transform: translate(-50%, -50%);
-
   white-space: nowrap;
-
   border: 1px solid #4ad8d1;
-
   background: #101526;
-
   color: #ffffff;
-
   padding: 8px 14px;
-
   border-radius: 30px;
-
   font-size: 10px;
-
   font-weight: bold;
-
   letter-spacing: 1px;
-
   cursor: pointer;
-
   z-index: 30;
-
   box-shadow:
     0 0 12px #4ad8d155;
-
   transition:
     transform .3s ease,
     background .3s ease,
     box-shadow .3s ease;
-
 }
 
 
 /* hover */
-
 .idea:hover {
-
   background: #6846c7;
-
   transform:
     translate(-50%, -50%) scale(1.2);
-
   box-shadow:
     0 0 10px #4ad8d1,
     0 0 25px #6846c7;
-
 }
-
 
 /* =========================================
    TEXTO EXPLICATIVO
    ========================================= */
-
 .idea-message {
-
   flex: 1 1 300px;
-
   min-width: 280px;
-
-  margin: 0 10px;
-
   padding: 25px;
-
   text-align: left;
-
   border-left: 3px solid #4ad8d1;
-
   background: rgba(255, 255, 255, .04);
-
   border-radius: 0 15px 15px 0;
-
   transition: .4s;
-
 }
-
 
 /* título */
-
 .idea-message span {
-
   display: block;
-
   color: #4ad8d1;
-
   font-size: 12px;
-
   font-weight: bold;
-
   letter-spacing: 2px;
-
   margin-bottom: 8px;
-
 }
-
 
 /* explicación */
-
 .idea-message p {
-
   margin: 0;
-
   color: #d5d8e4;
-
   font-size: 14px;
-
   line-height: 1.7;
-
 }
-
 
 /* =========================================
    ANIMACIONES
    ========================================= */
-
 @keyframes corePulse {
 
   0%,
   100% {
-
     transform: scale(1);
-
     box-shadow:
       0 0 15px #4ad8d1,
       0 0 45px #6846c7;
-
   }
 
   50% {
-
     transform: scale(1.08);
-
     box-shadow:
       0 0 30px #4ad8d1,
       0 0 80px #6846c7;
-
   }
-
 }
 
-
 @keyframes symbolRotate {
-
   from {
     transform: rotate(0deg);
   }
@@ -1015,7 +906,6 @@ footer a {
   to {
     transform: rotate(360deg);
   }
-
 }
 
 
@@ -1030,12 +920,9 @@ footer a {
     transform:
       translate(-50%, -50%) rotate(360deg);
   }
-
 }
 
-
 @keyframes orbit2 {
-
   from {
     transform:
       translate(-50%, -50%) rotate(0deg);
@@ -1045,9 +932,7 @@ footer a {
     transform:
       translate(-50%, -50%) rotate(360deg);
   }
-
 }
-
 
 @keyframes orbit3 {
 
@@ -1078,7 +963,6 @@ footer a {
 
 }
 
-
 @keyframes orbit5 {
 
   from {
@@ -1093,7 +977,6 @@ footer a {
 
 }
 
-
 /* =========================================
    TABLET
    ========================================= */
@@ -1101,37 +984,24 @@ footer a {
 @media (max-width: 800px) {
 
   .intel-container {
-
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
   }
 
   .intel-logo {
-
     flex: 0 1 350px;
-
     width: min(350px, 90vw);
-
     height: min(350px, 90vw);
-
   }
 
   .idea-message {
-
-    width: min(500px, 90vw);
-
     flex: none;
-
-    margin: 20px 10px 0;
-
     border-left: none;
-
     border-top: 3px solid #4ad8d1;
-
     border-radius: 0 0 15px 15px;
-
     text-align: center;
-
+    margin-top: 20px;
   }
 
 }
@@ -1226,7 +1096,7 @@ footer a {
 
 
 /* Contenedor del QR */
-.codigosqr{
+.codigosqr {
   display: flex;
   justify-content: space-around;
   width: 95%;
@@ -1245,7 +1115,7 @@ footer a {
   flex-direction: column;
 }
 
-.qrcode{
+.qrcode {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1275,7 +1145,7 @@ footer a {
 
 
 /*Matemáticas*/
-.mat{
+.mat {
   border-radius: 7px;
   padding: 5px 7px;
   background-color: var(--cyan);
@@ -1283,9 +1153,8 @@ footer a {
   font-weight: bold;
   transition: 0.3s;
 }
-.mat:hover{
+
+.mat:hover {
   scale: 0.95;
   background-color: transparent;
 }
-
-
