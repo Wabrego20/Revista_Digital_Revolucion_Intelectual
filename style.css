@@ -688,7 +688,7 @@ footer a {
   border: none;
   border-radius: 10px;
   max-width: 95%;
-  margin: 10px auto;
+  margin: 5px auto;
   display: flex;
   aspect-ratio: 9/16;
 }
