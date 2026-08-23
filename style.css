@@ -514,8 +514,6 @@ header {
   margin: 10px 0;
 
 }
-
-
 .sources {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -609,6 +607,14 @@ footer a {
     flex-direction: column;
     width: 99%;
     margin: 0 auto;
+  }
+
+  .nav-links a{
+    padding: 10px 0;
+    margin: 0;
+    background-color: transparent;
+    color: var(--white);
+    
   }
 
   .nav-links.open {
@@ -1085,25 +1091,14 @@ footer a {
 
   }
 
-
   .idea-message span {
-
     font-size: 10px;
-
   }
-
-
   .idea-message p {
-
     font-size: 13px;
-
   }
 
 }
-
-
-
-
 
 /* Contenedor del QR */
 .codigosqr {
@@ -1146,13 +1141,6 @@ footer a {
   align-items: center;
   font-size: 12px;
 }
-
-
-
-
-
-
-
 
 /*Matemáticas*/
 .mat {
