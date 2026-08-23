@@ -683,6 +683,16 @@ footer a {
   transform: translateY(0)
 }
 
+.revExp{
+  width: 250px;
+  border: none;
+  border-radius: 10px;
+  max-width: 95%;
+  margin: 10px auto;
+  display: flex;
+  aspect-ratio: 9/16;
+}
+
 
 
 /* =========================================
