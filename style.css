@@ -690,13 +690,13 @@ footer a {
 }
 
 .revExp{
-  width: 250px;
+  max-width: 95%;
   border: none;
   border-radius: 10px;
-  max-width: 95%;
+  width: 512px;
   margin: 5px auto;
   display: flex;
-  aspect-ratio: 9/16;
+  aspect-ratio: 16/9;
 }
 
 
