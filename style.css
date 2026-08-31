@@ -228,7 +228,6 @@ header {
   color: var(--orange)
 }
 
-
 .cover-description {
   max-width: 460px;
   color: #e6e6ef !important;
@@ -373,8 +372,6 @@ header {
   font-size: .85rem;
   font-weight: 700
 }
-
-
 
 .fact-card {
   background: linear-gradient(145deg, #302061, #182e4a);
@@ -566,7 +563,6 @@ header {
   margin: 10px;
 }
 
-
 .books h3 {
   font: 700 1.8rem 'Playfair Display', serif;
   width: 95%;
@@ -612,8 +608,8 @@ footer a {
   .nav-links a{
     padding: 10px 0;
     margin: 0;
-    background-color: transparent;
     color: var(--white);
+    border: none;
     
   }
 
@@ -699,8 +695,6 @@ footer a {
   aspect-ratio: 16/9;
 }
 
-
-
 /* =========================================
    NÚCLEO DE LA REVOLUCIÓN INTELECTUAL
    ========================================= */
@@ -771,7 +765,7 @@ footer a {
 
 /* texto IDEAS */
 .intel-core span {
-  color: #ffffff;
+  color: var(--paper);
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -924,7 +918,6 @@ footer a {
   }
 }
 
-
 @keyframes orbit1 {
 
   from {
@@ -1022,73 +1015,45 @@ footer a {
 
 }
 
-
 /* =========================================
    CELULAR
    ========================================= */
 
 @media (max-width: 480px) {
-
   .intel-container {
-
     width: 100%;
-
     padding: 0 10px;
-
   }
-
 
   .intel-logo {
-
     width: min(300px, 90vw);
-
     height: min(300px, 90vw);
-
   }
 
-
   .intel-core {
-
     width: 95px;
-
     height: 95px;
-
   }
 
 
   .core-symbol {
-
     font-size: 27px;
-
   }
-
 
   .intel-core span {
-
     font-size: 8px;
-
     letter-spacing: 2px;
-
   }
-
 
   .idea {
-
     font-size: 8px;
-
     padding: 6px 9px;
-
   }
 
-
   .idea-message {
-
     width: 100%;
-
     margin: 20px 0 0;
-
     padding: 20px 15px;
-
   }
 
   .idea-message span {
