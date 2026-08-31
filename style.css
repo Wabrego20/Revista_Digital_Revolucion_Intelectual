@@ -1146,8 +1146,8 @@ footer a {
 .mat {
   border-radius: 7px;
   padding: 5px 7px;
-  background-color: var(--cyan);
-  color: var(--ink);
+  color: var(--cyan);
+  border:  2px solid var(--cyan);
   font-weight: bold;
   transition: 0.3s;
 }
